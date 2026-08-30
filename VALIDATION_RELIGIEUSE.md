@@ -68,6 +68,12 @@ Elles sont **vérifiées automatiquement** par les tests du projet :
 
 > Ce n'est pas une arme et ça ne fait aucun dégât. Tu cherches refuge auprès d'Allah — puis tu reprends tes efforts. Le waswas ne recule pas par magie : il recule parce que tu avances.
 
+**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**
+
+> فَإِذَا قَرَأْتَ الْقُرْآنَ فَاسْتَعِذْ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ
+>
+> « Lorsque tu lis le Coran, cherche refuge auprès d'Allah contre le diable banni. »
+
 **Remarques du relecteur :**
 
 ```
@@ -104,6 +110,12 @@ Statut :  [ ] VALIDÉ   [ ] À CORRIGER   [ ] À RETIRER
 
 > Aller vers l'autre pour apprendre à le connaître n'est donc pas une bizarrerie de ta part. Le verset rappelle aussi que ce qui distingue auprès d'Allah, c'est la taqwā — pas l'origine ni le groupe.
 
+**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**
+
+> وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ
+>
+> « ...et Nous avons fait de vous des nations et des tribus, pour que vous vous entreconnaissiez. Le plus noble d'entre vous, auprès d'Allah, est le plus pieux. »
+
 **Remarques du relecteur :**
 
 ```
@@ -139,6 +151,10 @@ Statut :  [ ] VALIDÉ   [ ] À CORRIGER   [ ] À RETIRER
 **Explication affichée après la réponse :**
 
 > Faire le bien, ce n'est pas forcément parler. Écouter, ou se taire, c'est déjà agir correctement.
+
+**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**
+
+> « Que celui qui croit en Allah et au Jour dernier dise du bien ou qu'il se taise. »
 
 **Remarques du relecteur :**
 
@@ -212,6 +228,12 @@ Statut :  [ ] VALIDÉ   [ ] À CORRIGER   [ ] À RETIRER
 
 > Le sabr n'est pas forcer quelqu'un, et ce n'est pas non plus prétendre ne rien ressentir. C'est accepter la difficulté et continuer à avancer correctement.
 
+**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**
+
+> يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ
+>
+> « Ô les croyants ! Cherchez secours dans l'endurance et la prière. Car Allah est avec ceux qui sont endurants. »
+
 **Remarques du relecteur :**
 
 ```
@@ -248,6 +270,10 @@ Statut :  [ ] VALIDÉ   [ ] À CORRIGER   [ ] À RETIRER
 
 > Ton intention est quelque chose que tu surveilles toi-même. Ce n'est pas quelque chose que tu montres aux autres — ni à ce jeu, qui ne peut rien en savoir.
 
+**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**
+
+> « Les actions ne valent que par les intentions qui les animent, et chacun ne recevra que selon son intention. »
+
 **Remarques du relecteur :**
 
 ```
@@ -283,6 +309,12 @@ Statut :  [ ] VALIDÉ   [ ] À CORRIGER   [ ] À RETIRER
 **Explication affichée après la réponse :**
 
 > Être reconnaissant, ce n'est pas dire que tout est parfait. C'est reconnaître les bienfaits reçus, même au milieu d'une difficulté.
+
+**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**
+
+> لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ
+>
+> « Si vous êtes reconnaissants, très certainement J'augmenterai [Mes bienfaits] pour vous. »
 
 **Remarques du relecteur :**
 
@@ -596,6 +628,10 @@ Statut :  [ ] VALIDÉ   [ ] À CORRIGER   [ ] À RETIRER
 
 > C'est le cœur de NOUR : l'invocation ne remplace pas l'effort, et l'effort ne remplace pas l'invocation. Les deux vont ensemble.
 
+**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**
+
+> « Recherche avec ardeur ce qui t'est profitable, demande l'aide d'Allah et ne sois pas impuissant. »
+
 **Remarques du relecteur :**
 
 ```
@@ -613,12 +649,14 @@ Ces entrées sont celles où nous avons le moins de certitude. Elles méritent u
 
 | Entrée | Pourquoi |
 |---|---|
-| `q4_sabr` / `sabr` | Aucune source précise. Le cahier des charges indique « à vérifier précisément ». |
-| `q_niyyah` / `niyyah` | « Référence à documenter » — le hadith habituellement cité n’a pas été rattaché formellement. |
-| `q9_shukr` / `shukr` | « Référence à documenter ». |
-| `q7_salam` / `salam` | Muwatta Malik cité, mais numéro non vérifié. |
-| `q6_adab` / `adab` | Bukhari 6136 cité, à confirmer. |
-| `q1_taaruf`, `q3_istiadhah` | Références coraniques (49:13 ; 16:98) qui semblent solides, mais à confirmer formellement. |
+| **Toutes les entrées avec citation** | Le TEXTE du verset ou du hadith est affiché au joueur, pas seulement la référence. Cela engage davantage : à vérifier en priorité, traduction comprise. |
+| `q4_sabr` / `sabr` | Coran 2:153 — vérifier que le verset soutient bien la définition donnée du sabr. |
+| `q_niyyah` / `niyyah` | Bukhari 1 — vérifier la formulation de la traduction retenue. |
+| `q9_shukr` / `shukr` | Coran 14:7 — vérifier la traduction, notamment le passage entre crochets. |
+| `q7_salam` / `salam` | Bukhari 6237 — **aucune citation textuelle** pour cette entrée : seule la référence est affichée. |
+| `q6_adab` / `adab` | Bukhari 6018. |
+| `q3_istiadhah`, `q1_taaruf` | Coran 16:98 et 49:13, avec le texte arabe affiché — vérifier la vocalisation. |
+| `effort` | Muslim 2664 — fiche de bibliothèque avec citation. |
 
 ---
 

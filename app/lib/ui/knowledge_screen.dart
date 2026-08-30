@@ -160,7 +160,14 @@ class _Fiche extends StatelessWidget {
                   fontSize: 10.5, color: NourColors.encreDouce),
             ),
             const SizedBox(height: 8),
-            StatutBadge(statut: notion.statut, reference: notion.reference),
+            if (notion.citation != null && notion.citation!.trim().isNotEmpty)
+              CitationBox(
+                texte: notion.citation!,
+                reference: notion.reference,
+                statut: notion.statut,
+              )
+            else
+              StatutBadge(statut: notion.statut, reference: notion.reference),
           ],
         ),
       ),

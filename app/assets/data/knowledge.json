@@ -1,7 +1,10 @@
 {
   "_meta": {
     "avertissement": "Aucune fiche n'est publiable tant que statut != VALIDE. Statut VALIDE = verifie par une personne competente (CDC §3, §8).",
-    "statuts": ["A_VALIDER", "VALIDE"],
+    "statuts": [
+      "A_VALIDER",
+      "VALIDE"
+    ],
     "note": "Les references ont ete precisees par l'equipe. Elles restent A_VALIDER en attente de relecture.",
     "principe": "Allah est Celui qui donne les bienfaits et permet les causes. Le jeu ne transforme jamais une invocation en pouvoir."
   },
@@ -112,7 +115,8 @@
       "source": "Sunnah",
       "reference": "Sahih Muslim 2664",
       "niveau": "debutant",
-      "statut": "A_VALIDER"
+      "statut": "A_VALIDER",
+      "citation": "« Recherche avec ardeur ce qui t'est profitable, demande l'aide d'Allah et ne sois pas impuissant. »"
     }
   ]
 }

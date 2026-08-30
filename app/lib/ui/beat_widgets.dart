@@ -43,7 +43,11 @@ class BeatBubble extends StatelessWidget {
           italique: true,
         );
       case 'etape':
-        return _Etape(titre: beat.titre ?? '', texte: beat.texte);
+        return _Etape(
+          titre: beat.titre ?? '',
+          texte: beat.texte,
+          description: beat.description,
+        );
       case 'compagnon':
         return _Systeme(
           icone: Icons.people_alt_outlined,
@@ -130,9 +134,16 @@ class _Bulle extends StatelessWidget {
 }
 
 class _Etape extends StatelessWidget {
-  const _Etape({required this.titre, required this.texte});
+  const _Etape({
+    required this.titre,
+    required this.texte,
+    this.description,
+  });
   final String titre;
   final String texte;
+
+  /// Pourquoi cette etape compte. Affichee sous le texte, en retrait.
+  final String? description;
 
   @override
   Widget build(BuildContext context) {
@@ -152,6 +163,18 @@ class _Etape extends StatelessWidget {
             const SizedBox(height: 4),
             Text(texte,
                 style: const TextStyle(fontSize: 13, height: 1.45)),
+            if (description != null && description!.trim().isNotEmpty) ...[
+              const SizedBox(height: 7),
+              Text(
+                description!,
+                style: const TextStyle(
+                  fontSize: 12,
+                  height: 1.5,
+                  fontStyle: FontStyle.italic,
+                  color: NourColors.encreDouce,
+                ),
+              ),
+            ],
           ],
         ),
       ),
@@ -243,6 +266,93 @@ class StatutBadge extends StatelessWidget {
               ],
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+
+/// Encart de citation : le TEXTE d'un verset ou d'un hadith.
+///
+/// Volontairement distinct des explications du jeu : le joueur doit voir
+/// d'un coup d'oeil ce qui est une parole rapportee et ce qui est une
+/// formulation pedagogique de NOUR (CDC §8).
+///
+/// Le statut de validation est affiche juste en dessous : tant qu'une
+/// citation n'est pas verifiee, elle n'est jamais presentee comme
+/// definitive (CDC §3).
+class CitationBox extends StatelessWidget {
+  const CitationBox({
+    super.key,
+    required this.texte,
+    required this.reference,
+    required this.statut,
+    this.arabe,
+  });
+
+  final String texte;
+  final String reference;
+  final StatutValidation statut;
+  final String? arabe;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(13),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF7F1E2),
+        border: Border.all(color: NourColors.ocreFonce, width: 2),
+        borderRadius: BorderRadius.circular(4),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.format_quote,
+                  size: 14, color: NourColors.ocreFonce),
+              const SizedBox(width: 6),
+              Text(
+                reference.toUpperCase(),
+                style: const TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.2,
+                  color: NourColors.ocreFonce,
+                ),
+              ),
+            ],
+          ),
+          if (arabe != null && arabe!.trim().isNotEmpty) ...[
+            const SizedBox(height: 10),
+            // L'arabe se lit de droite a gauche.
+            Directionality(
+              textDirection: TextDirection.rtl,
+              child: Text(
+                arabe!,
+                textAlign: TextAlign.right,
+                style: const TextStyle(
+                  fontSize: 17,
+                  height: 1.9,
+                  color: NourColors.encre,
+                ),
+              ),
+            ),
+          ],
+          const SizedBox(height: 9),
+          Text(
+            texte,
+            style: const TextStyle(
+              fontSize: 13,
+              height: 1.6,
+              color: NourColors.encre,
+              fontStyle: FontStyle.italic,
+            ),
+          ),
+          const SizedBox(height: 10),
+          StatutBadge(statut: statut, reference: reference),
         ],
       ),
     );

@@ -125,6 +125,14 @@ def main():
         A('**Explication affichée après la réponse :**')
         A('')
         A('> %s' % q['explication'])
+        if q.get('citation'):
+            A('')
+            A('**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**')
+            A('')
+            if q.get('citation_ar'):
+                A('> %s' % q['citation_ar'])
+                A('>')
+            A('> %s' % q['citation'])
         A('')
         A('**Remarques du relecteur :**')
         A('')
@@ -168,6 +176,11 @@ def main():
         A('**Explication affichée :**')
         A('')
         A('> %s' % n['explication'])
+        if n.get('citation'):
+            A('')
+            A('**CITATION AFFICHÉE AU JOUEUR — à vérifier en priorité :**')
+            A('')
+            A('> %s' % n['citation'])
         A('')
         A('**Remarques du relecteur :**')
         A('')
@@ -190,20 +203,24 @@ def main():
     A('')
     A('| Entrée | Pourquoi |')
     A('|---|---|')
-    A('| `q4_sabr` / `sabr` | Aucune source précise. Le cahier des '
-      'charges indique « à vérifier précisément '
-      '». |')
-    A('| `q_niyyah` / `niyyah` | « Référence à '
-      'documenter » — le hadith habituellement cité n’a '
-      'pas été rattaché formellement. |')
-    A('| `q9_shukr` / `shukr` | « Référence à documenter '
-      '». |')
-    A('| `q7_salam` / `salam` | Muwatta Malik cité, mais numéro non '
-      'vérifié. |')
-    A('| `q6_adab` / `adab` | Bukhari 6136 cité, à confirmer. |')
-    A('| `q1_taaruf`, `q3_istiadhah` | Références coraniques '
-      '(49:13 ; 16:98) qui semblent solides, mais à confirmer '
-      'formellement. |')
+    A('| **Toutes les entrées avec citation** | Le TEXTE du verset ou du '
+      'hadith est affiché au joueur, pas seulement la référence. '
+      'Cela engage davantage : à vérifier en priorité, traduction '
+      'comprise. |')
+    A('| `q4_sabr` / `sabr` | Coran 2:153 — vérifier que le verset '
+      'soutient bien la définition donnée du sabr. |')
+    A('| `q_niyyah` / `niyyah` | Bukhari 1 — vérifier la formulation '
+      'de la traduction retenue. |')
+    A('| `q9_shukr` / `shukr` | Coran 14:7 — vérifier la traduction, '
+      'notamment le passage entre crochets. |')
+    A('| `q7_salam` / `salam` | Bukhari 6237 — **aucune citation '
+      'textuelle** pour cette entrée : seule la référence est '
+      'affichée. |')
+    A('| `q6_adab` / `adab` | Bukhari 6018. |')
+    A('| `q3_istiadhah`, `q1_taaruf` | Coran 16:98 et 49:13, avec le '
+      'texte arabe affiché — vérifier la vocalisation. |')
+    A('| `effort` | Muslim 2664 — fiche de bibliothèque avec '
+      'citation. |')
     A('')
     A('---')
     A('')

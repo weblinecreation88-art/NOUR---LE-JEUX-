@@ -2,7 +2,8 @@
   "_meta": {
     "avertissement": "Les references ont ete precisees par l'equipe (Bukhari 1, 6018, 6237 ; Muslim 2664 ; Coran 2:153, 14:7, 16:98, 49:13). Elles restent A_VALIDER tant qu'une personne competente ne les a pas verifiees (CDC §3, §8).",
     "regle": "Une mauvaise reponse ne retire jamais d'XP et ne culpabilise jamais le joueur (CDC §11, §19). Un quiz sert a comprendre, jamais a obtenir un pouvoir.",
-    "note_pedagogique": "Les explications sont des formulations du jeu. Elles ne sont pas des textes religieux et ne doivent jamais etre citees comme tels."
+    "note_pedagogique": "Les explications sont des formulations du jeu. Elles ne sont pas des textes religieux et ne doivent jamais etre citees comme tels.",
+    "citations": "Le champ \"citation\" contient le TEXTE traduit du verset ou du hadith. Afficher un texte engage plus qu'afficher une reference : ces entrees sont prioritaires a la relecture. citation_ar contient l'arabe quand il est disponible."
   },
   "questions": [
     {
@@ -19,7 +20,9 @@
       "explication": "Ce n'est pas une arme et ça ne fait aucun dégât. Tu cherches refuge auprès d'Allah — puis tu reprends tes efforts. Le waswas ne recule pas par magie : il recule parce que tu avances.",
       "source": "Coran",
       "reference": "Coran 16:98",
-      "statut": "A_VALIDER"
+      "statut": "A_VALIDER",
+      "citation": "« Lorsque tu lis le Coran, cherche refuge auprès d'Allah contre le diable banni. »",
+      "citation_ar": "فَإِذَا قَرَأْتَ الْقُرْآنَ فَاسْتَعِذْ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ"
     },
     {
       "id": "q1_taaruf",
@@ -35,7 +38,9 @@
       "explication": "Aller vers l'autre pour apprendre à le connaître n'est donc pas une bizarrerie de ta part. Le verset rappelle aussi que ce qui distingue auprès d'Allah, c'est la taqwā — pas l'origine ni le groupe.",
       "source": "Coran",
       "reference": "Coran 49:13",
-      "statut": "A_VALIDER"
+      "statut": "A_VALIDER",
+      "citation": "« ...et Nous avons fait de vous des nations et des tribus, pour que vous vous entreconnaissiez. Le plus noble d'entre vous, auprès d'Allah, est le plus pieux. »",
+      "citation_ar": "وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ"
     },
     {
       "id": "q6_adab",
@@ -51,7 +56,8 @@
       "explication": "Faire le bien, ce n'est pas forcément parler. Écouter, ou se taire, c'est déjà agir correctement.",
       "source": "Sunnah",
       "reference": "Sahih al-Bukhari 6018",
-      "statut": "A_VALIDER"
+      "statut": "A_VALIDER",
+      "citation": "« Que celui qui croit en Allah et au Jour dernier dise du bien ou qu'il se taise. »"
     },
     {
       "id": "q7_salam",
@@ -83,7 +89,9 @@
       "explication": "Le sabr n'est pas forcer quelqu'un, et ce n'est pas non plus prétendre ne rien ressentir. C'est accepter la difficulté et continuer à avancer correctement.",
       "source": "Coran",
       "reference": "Coran 2:153",
-      "statut": "A_VALIDER"
+      "statut": "A_VALIDER",
+      "citation": "« Ô les croyants ! Cherchez secours dans l'endurance et la prière. Car Allah est avec ceux qui sont endurants. »",
+      "citation_ar": "يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ"
     },
     {
       "id": "q_niyyah",
@@ -99,7 +107,8 @@
       "explication": "Ton intention est quelque chose que tu surveilles toi-même. Ce n'est pas quelque chose que tu montres aux autres — ni à ce jeu, qui ne peut rien en savoir.",
       "source": "Sunnah",
       "reference": "Sahih al-Bukhari 1",
-      "statut": "A_VALIDER"
+      "statut": "A_VALIDER",
+      "citation": "« Les actions ne valent que par les intentions qui les animent, et chacun ne recevra que selon son intention. »"
     },
     {
       "id": "q9_shukr",
@@ -115,7 +124,9 @@
       "explication": "Être reconnaissant, ce n'est pas dire que tout est parfait. C'est reconnaître les bienfaits reçus, même au milieu d'une difficulté.",
       "source": "Coran",
       "reference": "Coran 14:7",
-      "statut": "A_VALIDER"
+      "statut": "A_VALIDER",
+      "citation": "« Si vous êtes reconnaissants, très certainement J'augmenterai [Mes bienfaits] pour vous. »",
+      "citation_ar": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ"
     },
     {
       "id": "q10_ilm",

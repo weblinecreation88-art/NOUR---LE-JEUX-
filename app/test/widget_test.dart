@@ -123,6 +123,36 @@ void main() {
     });
   });
 
+  group('Citations textuelles (CDC §3, §8)', () {
+    test('toute citation affichée porte une référence et reste A_VALIDER', () {
+      // Afficher le TEXTE d'un verset engage bien plus qu'afficher une
+      // simple référence. Aucune citation ne doit donc apparaître comme
+      // définitivement validée avant relecture humaine.
+      final avecCitation = <String>[];
+      for (final q in quiz.values) {
+        final c = q.citation;
+        if (c == null || c.trim().isEmpty) continue;
+        avecCitation.add(q.id);
+        expect(q.reference.trim(), isNotEmpty,
+            reason: '${q.id} : citation sans référence');
+        expect(q.statut.estValide, isFalse,
+            reason: '${q.id} : une citation ne peut pas être VALIDE '
+                'sans vérification humaine');
+      }
+      expect(avecCitation, isNotEmpty,
+          reason: 'aucune citation trouvée — le contenu a-t-il été perdu ?');
+    });
+
+    test('les fiches à citation portent aussi une référence', () {
+      for (final n in notions.values) {
+        final c = n.citation;
+        if (c == null || c.trim().isEmpty) continue;
+        expect(n.reference.trim(), isNotEmpty, reason: n.id);
+        expect(n.statut.estValide, isFalse, reason: n.id);
+      }
+    });
+  });
+
   group('Règles non négociables — protection du joueur (CDC §9, §11, §16)', () {
     test('aucune action réelle ne demande de preuve intrusive', () {
       const interdits = [

@@ -31,6 +31,7 @@ class Notion {
     required this.reference,
     required this.niveau,
     required this.statut,
+    this.citation,
   });
 
   final String id;
@@ -44,6 +45,9 @@ class Notion {
   final String niveau;
   final StatutValidation statut;
 
+  /// Texte traduit, quand la fiche en porte un.
+  final String? citation;
+
   factory Notion.fromJson(Map<String, dynamic> j) => Notion(
         id: j['id'] as String,
         termeAr: j['terme_ar'] as String? ?? '',
@@ -55,6 +59,7 @@ class Notion {
         reference: j['reference'] as String? ?? '',
         niveau: j['niveau'] as String? ?? 'debutant',
         statut: StatutValidation.parse(j['statut'] as String?),
+        citation: j['citation'] as String?,
       );
 }
 
@@ -69,6 +74,8 @@ class QuizQuestion {
     required this.source,
     required this.reference,
     required this.statut,
+    this.citation,
+    this.citationAr,
   });
 
   final String id;
@@ -81,6 +88,14 @@ class QuizQuestion {
   final String reference;
   final StatutValidation statut;
 
+  /// Texte traduit du verset ou du hadith. Afficher un TEXTE engage plus
+  /// qu'afficher une reference : ces entrees sont prioritaires a la
+  /// relecture (CDC §3, §8).
+  final String? citation;
+
+  /// Le texte arabe, quand il est disponible.
+  final String? citationAr;
+
   factory QuizQuestion.fromJson(Map<String, dynamic> j) => QuizQuestion(
         id: j['id'] as String,
         notion: j['notion'] as String? ?? '',
@@ -91,6 +106,8 @@ class QuizQuestion {
         source: j['source'] as String? ?? '',
         reference: j['reference'] as String? ?? '',
         statut: StatutValidation.parse(j['statut'] as String?),
+        citation: j['citation'] as String?,
+        citationAr: j['citation_ar'] as String?,
       );
 }
 
@@ -135,6 +152,7 @@ class Beat {
   String? get etat => data['etat'] as String?;
   String? get intro => data['intro'] as String?;
   String? get sousTexte => data['sous_texte'] as String?;
+  String? get description => data['description'] as String?;
   String? get questionId => data['question'] as String?;
   String? get actionId => data['action'] as String?;
   String? get vers => data['vers'] as String?;

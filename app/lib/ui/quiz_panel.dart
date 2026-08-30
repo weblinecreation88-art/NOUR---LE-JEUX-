@@ -106,7 +106,17 @@ class _QuizPanelState extends State<QuizPanel> {
               ),
             ),
             const SizedBox(height: 10),
-            StatutBadge(statut: q.statut, reference: q.reference),
+            // La citation porte deja son propre badge de statut ; sans
+            // citation, on affiche le badge seul.
+            if (q.citation != null && q.citation!.trim().isNotEmpty)
+              CitationBox(
+                texte: q.citation!,
+                arabe: q.citationAr,
+                reference: q.reference,
+                statut: q.statut,
+              )
+            else
+              StatutBadge(statut: q.statut, reference: q.reference),
             const SizedBox(height: 12),
             NourButton(label: 'Continuer', onPressed: widget.onTermine),
           ],
