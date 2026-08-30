@@ -1,0 +1,137 @@
+{
+  "_meta": {
+    "avertissement": "Les references ont ete precisees par l'equipe (Bukhari 1, 6018, 6237 ; Muslim 2664 ; Coran 2:153, 14:7, 16:98, 49:13). Elles restent A_VALIDER tant qu'une personne competente ne les a pas verifiees (CDC §3, §8).",
+    "regle": "Une mauvaise reponse ne retire jamais d'XP et ne culpabilise jamais le joueur (CDC §11, §19). Un quiz sert a comprendre, jamais a obtenir un pouvoir.",
+    "note_pedagogique": "Les explications sont des formulations du jeu. Elles ne sont pas des textes religieux et ne doivent jamais etre citees comme tels."
+  },
+  "questions": [
+    {
+      "id": "q3_istiadhah",
+      "notion": "istiadhah",
+      "question": "Que peut-on dire lorsqu'on cherche refuge auprès d'Allah contre Shayṭān ?",
+      "choix": [
+        "Il n'y a rien à dire, il faut juste ignorer.",
+        "Aʿūdhu billāhi mina sh-shayṭāni r-rajīm.",
+        "Une formule que chacun invente comme il veut.",
+        "Il faut d'abord être un savant pour avoir le droit de le dire."
+      ],
+      "reponse": 1,
+      "explication": "Ce n'est pas une arme et ça ne fait aucun dégât. Tu cherches refuge auprès d'Allah — puis tu reprends tes efforts. Le waswas ne recule pas par magie : il recule parce que tu avances.",
+      "source": "Coran",
+      "reference": "Coran 16:98",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "q1_taaruf",
+      "notion": "taaruf",
+      "question": "Pourquoi Allah a-t-Il créé les peuples et les tribus ?",
+      "choix": [
+        "Pour qu'ils se comparent entre eux.",
+        "Pour que les gens puissent se connaître.",
+        "Pour que chacun reste de son côté.",
+        "Pour déterminer qui est supérieur."
+      ],
+      "reponse": 1,
+      "explication": "Aller vers l'autre pour apprendre à le connaître n'est donc pas une bizarrerie de ta part. Le verset rappelle aussi que ce qui distingue auprès d'Allah, c'est la taqwā — pas l'origine ni le groupe.",
+      "source": "Coran",
+      "reference": "Coran 49:13",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "q6_adab",
+      "notion": "adab",
+      "question": "Que faire lorsqu'on n'a rien de bon à dire ?",
+      "choix": [
+        "Parler quand même.",
+        "Répondre sur le même ton.",
+        "Garder le silence.",
+        "Se moquer."
+      ],
+      "reponse": 2,
+      "explication": "Faire le bien, ce n'est pas forcément parler. Écouter, ou se taire, c'est déjà agir correctement.",
+      "source": "Sunnah",
+      "reference": "Sahih al-Bukhari 6018",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "q7_salam",
+      "notion": "salam",
+      "question": "Après un éloignement entre deux personnes, qui est le meilleur des deux ?",
+      "choix": [
+        "Celui qui attend que l'autre vienne.",
+        "Celui qui avait raison.",
+        "Celui qui commence par le salām.",
+        "Celui qui oublie le plus vite."
+      ],
+      "reponse": 2,
+      "explication": "Le premier pas n'est pas une défaite. C'est souvent le geste le plus fort des deux.",
+      "source": "Sunnah",
+      "reference": "Sahih al-Bukhari 6237",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "q4_sabr",
+      "notion": "sabr",
+      "question": "Quel comportement correspond le mieux au sabr ?",
+      "choix": [
+        "Insister jusqu'à ce que l'autre accepte.",
+        "Persévérer avec patience face à la difficulté.",
+        "Abandonner immédiatement.",
+        "Faire semblant que ça ne fait pas mal."
+      ],
+      "reponse": 1,
+      "explication": "Le sabr n'est pas forcer quelqu'un, et ce n'est pas non plus prétendre ne rien ressentir. C'est accepter la difficulté et continuer à avancer correctement.",
+      "source": "Coran",
+      "reference": "Coran 2:153",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "q_niyyah",
+      "notion": "niyyah",
+      "question": "Dans une bonne action, quelle chose compte notamment auprès d'Allah ?",
+      "choix": [
+        "Être applaudi.",
+        "Être impressionnant.",
+        "L'intention avec laquelle on agit.",
+        "Recevoir quelque chose en retour."
+      ],
+      "reponse": 2,
+      "explication": "Ton intention est quelque chose que tu surveilles toi-même. Ce n'est pas quelque chose que tu montres aux autres — ni à ce jeu, qui ne peut rien en savoir.",
+      "source": "Sunnah",
+      "reference": "Sahih al-Bukhari 1",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "q9_shukr",
+      "notion": "shukr",
+      "question": "Comment appelle-t-on la gratitude envers Allah pour Ses bienfaits ?",
+      "choix": [
+        "Le sabr.",
+        "L'adab.",
+        "Le shukr.",
+        "La niyyah."
+      ],
+      "reponse": 2,
+      "explication": "Être reconnaissant, ce n'est pas dire que tout est parfait. C'est reconnaître les bienfaits reçus, même au milieu d'une difficulté.",
+      "source": "Coran",
+      "reference": "Coran 14:7",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "q10_ilm",
+      "notion": "ilm",
+      "question": "Tout ce que tu as appris aujourd'hui… qu'est-ce qui t'a réellement permis d'avancer ?",
+      "choix": [
+        "La chance.",
+        "L'XP.",
+        "Le ʿilm, les efforts et le fait de passer à l'action.",
+        "Le fait d'avoir toujours eu raison."
+      ],
+      "reponse": 2,
+      "explication": "Ce n'est pas une citation religieuse : c'est la phrase qui résume ce jeu. Apprendre, faire des efforts, puis passer à l'action.",
+      "source": "Formulation pédagogique du jeu",
+      "reference": "Phrase de philosophie du jeu — n'est pas un texte religieux",
+      "statut": "VALIDE"
+    }
+  ]
+}

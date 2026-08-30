@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "regle": "Validation declarative uniquement. Aucune preuve : ni photo, ni audio, ni localisation, ni acces aux messages (CDC §11, §16). Reporter une action est toujours propose, sans reproche.",
+    "note": "Chaque action propose des variantes de contexte (ecole, travail, famille, maison, quartier) — le joueur choisit ce qui lui correspond."
+  },
+  "actions": [
+    {
+      "id": "a1_ranger",
+      "titre": "Range ton lit",
+      "duree": "5 minutes",
+      "variantes": [
+        "Range ton lit.",
+        "Dégage ton bureau ou ta table.",
+        "Range une seule étagère, pas plus."
+      ],
+      "xp": 20
+    },
+    {
+      "id": "a3_dua_matin",
+      "titre": "Un rappel, au calme",
+      "duree": "2 minutes",
+      "variantes": [
+        "Apprends la formule de l'istiʿādhah et redis-la une fois.",
+        "Prends deux minutes de calme, sans téléphone.",
+        "Dis le duʿā du matin si tu le connais."
+      ],
+      "xp": 60
+    },
+    {
+      "id": "a4_parler",
+      "titre": "Adresse la parole à quelqu'un que tu connais peu",
+      "duree": "1 minute",
+      "variantes": [
+        "Parle à quelqu'un que tu croises souvent sans lui parler.",
+        "Pose une question à quelqu'un à l'école ou au travail.",
+        "Adresse la parole à un voisin."
+      ],
+      "xp": 100
+    },
+    {
+      "id": "a5_ecouter",
+      "titre": "Écoute sans interrompre",
+      "duree": "5 minutes",
+      "variantes": [
+        "Laisse quelqu'un finir sans l'interrompre.",
+        "Choisis de te taire dans une conversation où tu n'as rien de bon à ajouter.",
+        "Passe cinq minutes avec un proche, sans ton téléphone."
+      ],
+      "xp": 80
+    },
+    {
+      "id": "a6_sans_forcer",
+      "titre": "Accepte une réponse que tu n'attendais pas",
+      "duree": "quand l'occasion se présente",
+      "variantes": [
+        "Retente un échange avec quelqu'un, sans insister s'il n'est pas disponible.",
+        "Accepte un refus sans le prendre contre toi.",
+        "Laisse la porte ouverte à quelqu'un, sans rien exiger."
+      ],
+      "xp": 100
+    },
+    {
+      "id": "a7_service",
+      "titre": "Fais une petite bonne action sans chercher à être félicité",
+      "duree": "5 minutes",
+      "variantes": [
+        "Aide quelqu'un sans le raconter à personne ensuite.",
+        "Rends un service chez toi, sans qu'on te le demande.",
+        "Aide quelqu'un à porter ou ranger quelque chose."
+      ],
+      "xp": 150
+    },
+    {
+      "id": "a8_gratitude",
+      "titre": "Remarque ce que tu as déjà reçu",
+      "duree": "2 minutes",
+      "variantes": [
+        "Écris trois choses que tu as et que tu ne remarques plus.",
+        "Remercie quelqu'un qui t'aide souvent sans que tu le dises.",
+        "Appelle un proche juste pour prendre de ses nouvelles."
+      ],
+      "xp": 150
+    },
+    {
+      "id": "a9_salam",
+      "titre": "Va vers quelqu'un et dis-lui : « As-salāmu ʿalaykum »",
+      "duree": "1 minute",
+      "variantes": [
+        "Salue quelqu'un en premier, puis laisse la rencontre se faire naturellement.",
+        "Salue quelqu'un que tu n'as pas salué depuis longtemps.",
+        "Salue quelqu'un de ta famille que tu n'as pas salué aujourd'hui."
+      ],
+      "xp": 250
+    }
+  ]
+}

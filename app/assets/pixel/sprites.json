@@ -1,0 +1,145 @@
+{
+  "_meta": {
+    "description": "Manifeste des sprites NOUR. Genere par tools/decoupe_sprites.py.",
+    "regle": "Frames de largeur egale, personnage centre, pieds alignes en bas.",
+    "note": "Ne pas editer a la main : relancer le script apres avoir remplace une source."
+  },
+  "sprites": {
+    "characters/protagonist/idle.png": {
+      "chemin": "assets/pixel/characters/protagonist/idle.png",
+      "frames": 4,
+      "frame_largeur": 35,
+      "frame_hauteur": 96,
+      "fps": 6,
+      "boucle": true
+    },
+    "characters/protagonist/walk.png": {
+      "chemin": "assets/pixel/characters/protagonist/walk.png",
+      "frames": 4,
+      "frame_largeur": 46,
+      "frame_hauteur": 96,
+      "fps": 8,
+      "boucle": true
+    },
+    "characters/protagonist/interact.png": {
+      "chemin": "assets/pixel/characters/protagonist/interact.png",
+      "frames": 1,
+      "frame_largeur": 46,
+      "frame_hauteur": 96,
+      "fps": 1,
+      "boucle": false
+    },
+    "characters/protagonist/emotion.png": {
+      "chemin": "assets/pixel/characters/protagonist/emotion.png",
+      "frames": 1,
+      "frame_largeur": 46,
+      "frame_hauteur": 96,
+      "fps": 1,
+      "boucle": false
+    },
+    "characters/noura/idle.png": {
+      "chemin": "assets/pixel/characters/noura/idle.png",
+      "frames": 4,
+      "frame_largeur": 46,
+      "frame_hauteur": 96,
+      "fps": 6,
+      "boucle": true
+    },
+    "characters/noura/walk.png": {
+      "chemin": "assets/pixel/characters/noura/walk.png",
+      "frames": 6,
+      "frame_largeur": 42,
+      "frame_hauteur": 96,
+      "fps": 10,
+      "boucle": true
+    },
+    "characters/noura/interact.png": {
+      "chemin": "assets/pixel/characters/noura/interact.png",
+      "frames": 1,
+      "frame_largeur": 53,
+      "frame_hauteur": 96,
+      "fps": 1,
+      "boucle": false
+    },
+    "characters/npcs/enfant_pecheur.png": {
+      "chemin": "assets/pixel/characters/npcs/enfant_pecheur.png",
+      "frames": 1,
+      "frame_largeur": 36,
+      "frame_hauteur": 96,
+      "fps": 1,
+      "boucle": false
+    },
+    "characters/npcs/fille_panier.png": {
+      "chemin": "assets/pixel/characters/npcs/fille_panier.png",
+      "frames": 1,
+      "frame_largeur": 54,
+      "frame_hauteur": 96,
+      "fps": 1,
+      "boucle": false
+    },
+    "characters/npcs/marchand.png": {
+      "chemin": "assets/pixel/characters/npcs/marchand.png",
+      "frames": 1,
+      "frame_largeur": 42,
+      "frame_hauteur": 96,
+      "fps": 1,
+      "boucle": false
+    },
+    "characters/npcs/karim_ancien.png": {
+      "chemin": "assets/pixel/characters/npcs/karim_ancien.png",
+      "frames": 1,
+      "frame_largeur": 41,
+      "frame_hauteur": 96,
+      "fps": 1,
+      "boucle": false
+    },
+    "enemies/waswas/idle.png": {
+      "chemin": "assets/pixel/enemies/waswas/idle.png",
+      "frames": 4,
+      "frame_largeur": 165,
+      "frame_hauteur": 146,
+      "fps": 5,
+      "boucle": true
+    },
+    "enemies/waswas/move.png": {
+      "chemin": "assets/pixel/enemies/waswas/move.png",
+      "frames": 4,
+      "frame_largeur": 165,
+      "frame_hauteur": 150,
+      "fps": 7,
+      "boucle": true
+    },
+    "enemies/waswas/disappear.png": {
+      "chemin": "assets/pixel/enemies/waswas/disappear.png",
+      "frames": 4,
+      "frame_largeur": 165,
+      "frame_hauteur": 140,
+      "fps": 6,
+      "boucle": false
+    },
+    "enemies/grand_waswas/idle.png": {
+      "chemin": "assets/pixel/enemies/grand_waswas/idle.png",
+      "frames": 4,
+      "frame_largeur": 258,
+      "frame_hauteur": 196,
+      "fps": 4,
+      "boucle": true
+    },
+    "enemies/grand_waswas/attack.png": {
+      "chemin": "assets/pixel/enemies/grand_waswas/attack.png",
+      "frames": 4,
+      "frame_largeur": 258,
+      "frame_hauteur": 202,
+      "fps": 7,
+      "boucle": true
+    },
+    "enemies/grand_waswas/disappear.png": {
+      "chemin": "assets/pixel/enemies/grand_waswas/disappear.png",
+      "frames": 4,
+      "frame_largeur": 258,
+      "frame_hauteur": 190,
+      "fps": 5,
+      "boucle": false
+    }
+  }
+}

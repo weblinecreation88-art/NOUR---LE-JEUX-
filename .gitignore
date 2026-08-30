@@ -1,0 +1,50 @@
+# ─── Flutter / Dart ───────────────────────────────────────────────────
+app/build/
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/android/.gradle/
+app/android/local.properties
+app/android/app/debug/
+app/android/app/profile/
+app/android/app/release/
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/Flutter.framework
+app/ios/Flutter/Flutter.podspec
+.packages
+.pub-cache/
+.pub/
+*.iml
+*.iws
+
+# ─── Firebase — NE JAMAIS COMMITTER LES CLES ──────────────────────────
+app/lib/firebase_options.dart
+app/android/app/google-services.json
+app/ios/Runner/GoogleService-Info.plist
+app/macos/Runner/GoogleService-Info.plist
+.firebase/
+firebase-debug.log
+
+# ─── Sources d images brutes ──────────────────────────────────────────
+# ~61 Mo de JPEG/PNG originaux. Les assets utilises par le jeu sont dans
+# app/assets/ et sont versionnes. Les sources restent en local : elles ne
+# servent qu a regenerer via tools/decoupe_sprites.py.
+sources/backgrounds/
+sources/rejetes/
+sources/ui-references/
+sources/illustrations/
+sources/sprites/
+
+# ─── Livrables generes ────────────────────────────────────────────────
+*.apk
+*.aab
+VALIDATION_RELIGIEUSE.docx
+
+# ─── OS / editeurs ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

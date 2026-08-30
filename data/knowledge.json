@@ -1,0 +1,118 @@
+{
+  "_meta": {
+    "avertissement": "Aucune fiche n'est publiable tant que statut != VALIDE. Statut VALIDE = verifie par une personne competente (CDC §3, §8).",
+    "statuts": ["A_VALIDER", "VALIDE"],
+    "note": "Les references ont ete precisees par l'equipe. Elles restent A_VALIDER en attente de relecture.",
+    "principe": "Allah est Celui qui donne les bienfaits et permet les causes. Le jeu ne transforme jamais une invocation en pouvoir."
+  },
+  "notions": [
+    {
+      "id": "ilm",
+      "terme_ar": "عِلْم",
+      "translitteration": "ʿIlm",
+      "titre_fr": "Le savoir",
+      "definition": "La connaissance : apprendre et comprendre avant d'agir.",
+      "explication": "Dans NOUR, le savoir n'est jamais un pouvoir. Il éclaire le chemin — il ne le parcourt pas à ta place. Savoir, faire l'effort, puis agir.",
+      "source": "Formulation pédagogique du jeu",
+      "reference": "Définition du jeu — à rédiger et vérifier",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "istiadhah",
+      "terme_ar": "اِسْتِعَاذَة",
+      "translitteration": "Istiʿādhah",
+      "titre_fr": "Chercher refuge auprès d'Allah",
+      "definition": "Demander protection à Allah, notamment contre Shayṭān.",
+      "explication": "Ce n'est ni une formule magique ni une attaque. On se tourne vers Allah — puis on reprend ses moyens et ses efforts.",
+      "source": "Coran",
+      "reference": "Coran 16:98",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "taaruf",
+      "terme_ar": "تَعَارُف",
+      "translitteration": "Taʿāruf",
+      "titre_fr": "Apprendre à se connaître",
+      "definition": "Le fait que les gens fassent connaissance les uns avec les autres.",
+      "explication": "Aller vers l'autre n'est pas un défaut de caractère à corriger : c'est une démarche qui a du sens.",
+      "source": "Coran",
+      "reference": "Coran 49:13",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "salam",
+      "terme_ar": "سَلَام",
+      "translitteration": "Salām",
+      "titre_fr": "La salutation",
+      "definition": "La salutation islamique, premier geste vers l'autre.",
+      "explication": "Un mot suffit souvent à ouvrir une porte. C'est le plus petit pas possible — et il compte.",
+      "source": "Sunnah",
+      "reference": "Sahih al-Bukhari 6237",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "adab",
+      "terme_ar": "أَدَب",
+      "translitteration": "Adab",
+      "titre_fr": "Le bon comportement",
+      "definition": "Les bonnes manières dans la relation aux autres.",
+      "explication": "Écouter, ne pas blesser, se taire quand on n'a rien de bon à dire. Faire le bien n'est pas forcément parler.",
+      "source": "Sunnah",
+      "reference": "Sahih al-Bukhari 6018",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "sabr",
+      "terme_ar": "صَبْر",
+      "translitteration": "Sabr",
+      "titre_fr": "La patience",
+      "definition": "Persévérer avec patience face à la difficulté.",
+      "explication": "Le sabr n'est pas subir sans rien faire, ni forcer les autres. C'est accepter la difficulté et continuer à avancer — sans se retourner contre soi-même.",
+      "source": "Coran",
+      "reference": "Coran 2:153",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "niyyah",
+      "terme_ar": "نِيَّة",
+      "translitteration": "Niyyah",
+      "titre_fr": "L'intention",
+      "definition": "L'intention qui précède et accompagne l'action.",
+      "explication": "Pourquoi je fais ce geste ? Pour être vu, ou pour le bien lui-même ? La question se pose à soi, et à personne d'autre.",
+      "source": "Sunnah",
+      "reference": "Sahih al-Bukhari 1",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "shukr",
+      "terme_ar": "شُكْر",
+      "translitteration": "Shukr",
+      "titre_fr": "La gratitude",
+      "definition": "La reconnaissance envers Allah pour Ses bienfaits.",
+      "explication": "Regarder ce qu'on a reçu, et pas seulement ce qui manque. Même au milieu d'une difficulté.",
+      "source": "Coran",
+      "reference": "Coran 14:7",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    },
+    {
+      "id": "effort",
+      "terme_ar": "الأَخْذ بِالأَسْبَاب",
+      "translitteration": "Al-akhdh bi-l-asbāb",
+      "titre_fr": "Prendre les moyens",
+      "definition": "Rechercher ce qui est bénéfique, demander l'aide d'Allah, et ne pas se résigner.",
+      "explication": "C'est le cœur de NOUR : l'invocation ne remplace pas l'effort, et l'effort ne remplace pas l'invocation. Les deux vont ensemble.",
+      "source": "Sunnah",
+      "reference": "Sahih Muslim 2664",
+      "niveau": "debutant",
+      "statut": "A_VALIDER"
+    }
+  ]
+}

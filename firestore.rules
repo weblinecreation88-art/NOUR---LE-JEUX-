@@ -1,0 +1,65 @@
+rules_version = '2';
+
+// Regles de securite Firestore — NOUR (CDC §16).
+//
+// Principes :
+//  - un joueur ne peut lire et ecrire QUE sa propre progression ;
+//  - le contenu du jeu est en lecture seule cote client ;
+//  - aucune collection ne stocke de preuve d acte religieux, de localisation,
+//    de photo, d audio ou de contenu de messages : ces champs sont refuses.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Progression du joueur : strictement privee ---
+    match /player_progress/{uid} {
+      allow read, write: if request.auth != null
+                         && request.auth.uid == uid
+                         && sansDonneesSensibles();
+    }
+
+    match /users/{uid} {
+      allow read, write: if request.auth != null
+                         && request.auth.uid == uid
+                         && sansDonneesSensibles();
+    }
+
+    // --- Validations declaratives d actions reelles ---
+    // On enregistre qu une action a ete declaree, jamais de preuve.
+    match /quest_attempts/{docId} {
+      allow read: if request.auth != null
+                  && resource.data.uid == request.auth.uid;
+      allow create: if request.auth != null
+                    && request.resource.data.uid == request.auth.uid
+                    && sansDonneesSensibles();
+      allow update, delete: if false;
+    }
+
+    // --- Contenu du jeu : lecture seule ---
+    // L ecriture passe par la console ou une fonction d admin, jamais par
+    // le client : le contenu religieux ne doit pas etre modifiable par un
+    // joueur (CDC §3, §8).
+    match /scenes/{id}          { allow read: if true; allow write: if false; }
+    match /quiz_questions/{id}  { allow read: if true; allow write: if false; }
+    match /knowledge/{id}       { allow read: if true; allow write: if false; }
+    match /characters/{id}      { allow read: if true; allow write: if false; }
+    match /quests/{id}          { allow read: if true; allow write: if false; }
+    match /items/{id}           { allow read: if true; allow write: if false; }
+
+    // Refus par defaut de tout le reste.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Garde-fou : refuse toute tentative d ecrire un champ sensible,
+    // meme si un bug client essayait de l envoyer (CDC §9, §11, §16).
+    function sansDonneesSensibles() {
+      return !request.resource.data.keys().hasAny([
+        'photo', 'photo_url', 'image', 'preuve', 'proof',
+        'audio', 'enregistrement', 'recording',
+        'localisation', 'location', 'geo', 'gps', 'lat', 'lng',
+        'messages', 'contacts', 'carnet'
+      ]);
+    }
+  }
+}
